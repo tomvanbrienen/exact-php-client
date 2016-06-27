@@ -177,6 +177,7 @@ class Item extends Model
         'Modifier',
         'ModifierFullName',
         'Notes',
+        'PictureUrl',
         'SalesVatCode',
         'SalesVatCodeDescription',
         'SearchCode',

@@ -14,9 +14,13 @@ class PurchaseOrder extends Model{
     
     protected $fillable = [
         'PurchaseOrderID',
+        'Currency',
         'Description',
+        'OrderStatus',
         'OrderNumber',
         'OrderDate',
+        'ReceiptDate',
+        'Supplier',
         'SupplierCode',
         'SupplierName',
         'YourRef'

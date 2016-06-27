@@ -17,11 +17,14 @@ class PurchaseOrderLine extends Model{
         'Item',
         'ItemCode',
         'ItemDescription',
+        'LineNumber',
         'NetPrice',
         'ReceiptDate',
         'SupplierItemCode',
         'Quantity',
-        'UnitDescription'
+        'Unit',
+        'UnitDescription',
+        'VATCode'
     ];
 
     protected $url = 'purchaseorder/PurchaseOrderLines';
