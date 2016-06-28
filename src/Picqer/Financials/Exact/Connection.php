@@ -25,6 +25,11 @@ class Connection
      * @var string
      */
     private $apiUrl = '/api/v1';
+    
+    /**
+     * @var string
+     */
+    private $xmlUploadUrl = '/docs/XMLUpload.aspx';
 
     /**
      * @var string
@@ -247,6 +252,23 @@ class Connection
             $response = $this->client()->send($request);
 
             return $this->parseResponse($response);
+        } catch (Exception $e) {
+            $this->parseExceptionForErrorMessages($e);
+        }
+    }
+    
+    /**
+     * @param type $topic
+     * @param type $division
+     * @param type $body
+     * @throws Exception
+     */
+    public function xmlUpload($topic, $division, $body)
+    {
+        try {
+            $request = $this->createRequest('POST', $this->baseUrl . $this->xmlUploadUrl . 
+                    '?Topic=' . $topic . '&_Division_=' . $division, $body);
+            return $this->client()->send($request);
         } catch (Exception $e) {
             $this->parseExceptionForErrorMessages($e);
         }
