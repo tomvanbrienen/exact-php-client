@@ -20,6 +20,7 @@ class ShopOrder extends Model{
         'ProducedQuantity',
         'ShopOrderNumber',
         'Status',
+        'Warehouse',
         'YourRef'
     ];
 
