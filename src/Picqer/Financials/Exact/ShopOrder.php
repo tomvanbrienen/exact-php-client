@@ -19,6 +19,7 @@ class ShopOrder extends Model{
         'PlannedQuantity',
         'ProducedQuantity',
         'ShopOrderNumber',
+        'Status',
         'YourRef'
     ];
 
