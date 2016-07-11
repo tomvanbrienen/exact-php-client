@@ -20,6 +20,7 @@ class PurchaseOrder extends Model{
         'OrderNumber',
         'OrderDate',
         'ReceiptDate',
+        'ReceiptStatus',
         'Supplier',
         'SupplierCode',
         'SupplierName',
