@@ -16,7 +16,7 @@ class ShopOrder extends Model{
         'Description',
         'ID',
         'Item',
-        'PlannedDate',
+        'PlannedStartDate',
         'PlannedQuantity',
         'ProducedQuantity',
         'ShopOrderNumber',
