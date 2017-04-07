@@ -20,6 +20,7 @@ class ShopOrder extends Model{
         'PlannedQuantity',
         'ProducedQuantity',
         'ShopOrderNumber',
+        'ShopOrderRoutingStepPlans',
         'Status',
         'Warehouse',
         'YourRef'
