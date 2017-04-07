@@ -13,6 +13,7 @@ class ShopOrder extends Model{
     protected $primaryKey = 'ID';
     
     protected $fillable = [
+        'Description',
         'ID',
         'Item',
         'PlannedDate',
